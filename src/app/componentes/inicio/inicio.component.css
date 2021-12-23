@@ -1,0 +1,40 @@
+/* .barra{
+    background: #F02D3A;
+    width: 180px; 
+    height: 100vh;
+    position: fixed;
+    z-index: 2000;
+} */
+.barra{
+   
+    height: 2900px;
+    background: #F02D3A;
+}
+
+.centro_incio{
+    display: grid;
+    height: 100vh;
+
+
+}
+.inicio{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.inicio_contacto{
+
+    height: 100vh;
+}
+
+
+.productos{
+    height: 100vh;
+    border: 1px solid green;
+
+}
+
+.clientes{
+    height: 100vh;
+    border: 1px solid orange;
+}

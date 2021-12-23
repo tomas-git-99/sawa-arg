@@ -1,0 +1,58 @@
+.datos_contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    align-content: center;
+    --animate-duration: 1.5s;
+}
+
+.precentacion{
+
+    display: grid;
+    height: 90vh;
+    /* text-align: center; */
+    align-content: center;
+    justify-items: center;
+}
+.centrar_contacto{
+    text-align: justify;
+    width: 90%;
+
+}
+.centrar_contacto h1{
+ 
+    font-family: 'Poppins', sans-serif;
+    font-weight:500; 
+    font-size: 50px;
+    padding-bottom: 10px;
+    
+}
+
+.centrar_contacto p{
+    color: #3D3D3D;
+}
+.imagen_inicio{
+    place-self: center;
+}
+
+
+.redondo{
+    width:  600px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+}
+.boton_contacto{
+    display: grid;
+    justify-items: center;
+    
+}
+.boton_contacto button{
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #F02D3A;
+    color: white;
+}

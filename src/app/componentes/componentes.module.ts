@@ -7,14 +7,13 @@ import { InicioComponent } from './inicio/inicio.component';
 @NgModule({
   declarations: [
     NavbarComponent,
-    InicioComponent,
+
   ],
   imports: [
     CommonModule,    
   ],
   exports: [
     NavbarComponent,
-    InicioComponent
 ]
 })
 export class ComponentesModule { }

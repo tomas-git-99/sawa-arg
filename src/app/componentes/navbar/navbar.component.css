@@ -1,0 +1,22 @@
+li{
+    list-style: none;
+    font-size: 14px;
+}
+
+ul{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500; 
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    height: 10%;
+    margin-bottom: 0;
+}
+
+.boton_idiomas{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500; 
+}
