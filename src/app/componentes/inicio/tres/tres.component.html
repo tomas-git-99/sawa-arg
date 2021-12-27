@@ -1,0 +1,37 @@
+<div class="clientes_contenido">
+
+    <div class="contenido">
+
+        <div class="clientes">
+          <swiper
+          [slidesPerView]="5"
+          [loop]="true"
+          [spaceBetween]="30"
+          [hashNavigation]="{
+            watchState: false
+          }"
+          [autoplay]="{
+            delay: 1000,
+            disableOnInteraction: false
+          }"
+
+          class="mySwiper"
+        >
+          <ng-template data-hash="slide1" swiperSlide> <img src="https://www.fillmurray.com/640/360" alt="" srcset=""> </ng-template
+          ><ng-template data-hash="slide2" swiperSlide><img src="https://www.fillmurray.com/640/360" alt="" srcset=""></ng-template
+          ><ng-template data-hash="slide3" swiperSlide>Slide 3</ng-template
+          ><ng-template data-hash="slide4" swiperSlide>Slide 4</ng-template
+          ><ng-template data-hash="slide5" swiperSlide>Slide 5</ng-template
+          ><ng-template data-hash="slide6" swiperSlide>Slide 6</ng-template
+          ><ng-template data-hash="slide7" swiperSlide>Slide 7</ng-template
+          ><ng-template data-hash="slide8" swiperSlide>Slide 8</ng-template
+          ><ng-template data-hash="slide9" swiperSlide>Slide 9</ng-template>
+        </swiper>
+        </div>
+        
+        <div class="normas">
+    
+        </div>
+
+    </div>
+</div>
