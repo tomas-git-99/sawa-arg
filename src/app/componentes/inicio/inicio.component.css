@@ -5,9 +5,10 @@
     position: fixed;
     z-index: 2000;
 } */
+
 .barra{
    
-    height: 2900px;
+    height: 310vh;
     background: #F02D3A;
 }
 
@@ -23,7 +24,6 @@
 }
 
 .inicio_contacto{
-
     height: 100vh;
 }
 
@@ -35,5 +35,30 @@
 
 .clientes{
     height: 100vh;
-    border: 1px solid orange;
+}
+
+.final{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    background: #273043;
+}
+
+.derechos p{
+    color: #D3D3D3;
+}
+
+.icon{
+    border-radius: 50%;
+    background: white;
+    width:  57px;
+    height: 57px;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
 }

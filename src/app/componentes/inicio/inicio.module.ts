@@ -5,7 +5,8 @@ import { ComponentesModule } from '../componentes.module';
 import { UnoComponent } from './uno/uno.component';
 import { DosComponent } from './dos/dos.component';
 import { TresComponent } from './tres/tres.component';
-import { SwiperModule } from 'swiper/angular';
+
+
 
 
 
@@ -18,11 +19,11 @@ import { SwiperModule } from 'swiper/angular';
   ],
   imports: [
     CommonModule,
-    ComponentesModule,
-    SwiperModule
+    ComponentesModule
   ],
   exports: [
     InicioComponent
-  ]
+  ],
 })
+
 export class InicioModule { }

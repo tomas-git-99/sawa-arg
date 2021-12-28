@@ -30,6 +30,7 @@
 
 .centrar_contacto p{
     color: #3D3D3D;
+    font-size: 18px;
 }
 .imagen_inicio{
     place-self: center;
@@ -45,7 +46,7 @@
 .boton_contacto{
     display: grid;
     justify-items: center;
-    
+    margin-top: 100px;
 }
 .boton_contacto button{
     border: none;

@@ -1,10 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-
+/* @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default'; */
 *{
     padding:0;
     margin:0;
 }
 body{
     background:#E5E5E5;
+}
+html {
+    scrollbar-width: none;   /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
 }
