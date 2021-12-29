@@ -5,7 +5,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ProductoComponent } from './productos/producto/producto.component';
 import { ViewProductoComponent } from './view-producto/view-producto.component';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ViewProductoComponent } from './view-producto/view-producto.component';
 
   ],
   imports: [
-    CommonModule,    
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
