@@ -1,0 +1,41 @@
+.productos_full{
+    display: grid;
+    place-content: center;
+    height: auto;
+
+}
+
+.contenedor{
+    margin-top: 80px;
+    height: auto;
+    width: 1300px;
+    display: grid;
+    justify-items: center;
+
+    align-content:center;
+    grid-template-columns:  1fr 1fr 1fr;
+    row-gap: 60px;
+}
+.titulo_producto{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.producto{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width:  300px;
+    
+
+}
+
+.item{
+  
+    height: 250px;
+    width:  250px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}

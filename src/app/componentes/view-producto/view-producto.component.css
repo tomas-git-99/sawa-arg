@@ -1,0 +1,80 @@
+.contenedor{
+    position: fixed;
+    height: 100vh;
+    width: 90vw;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500; 
+
+}
+#boton_salir{
+  padding-right: 50px;
+}
+.contenido{
+    width:1200px;
+    height: 750px;
+    background: white;
+    border-radius: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+.titulo_productos{
+    
+    text-align: center;
+    color: #a4a4a4;
+}
+.carousel_2{
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    height: 350px; 
+    /*   width: 700px; */
+}
+
+.cortar_imagenes{
+    place-self: center;
+    width: 700px;
+}
+
+  
+.carousel-cell {
+  width: 45%;
+  height: 280px;
+  margin-right: 10px;
+  background: #efefef;
+  border-radius: 25px;
+  counter-increment: gallery-cell;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 280px;
+  font-size: 80px;
+  color: white;
+}
+
+.descripcion{
+    text-align: center;
+    place-self: center;
+    width: 90%;
+  }
+.descripcion_titulo{
+    padding-bottom: 20px;
+}
+.descripcion p{
+    font-size: 14px;
+    color: #3d3d3d;
+    text-align: start;
+}
+.soyelboton{
+    place-self: center;
+    /* margin-bottom: 30px; */
+   /*  margin-top: 30px; */
+}

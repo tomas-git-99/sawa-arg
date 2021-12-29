@@ -1,0 +1,25 @@
+.barra{
+
+    height:100vh;
+    height: 200vh;
+    background: #F02D3A;
+}
+
+.inicio{
+    display: grid;
+    grid-template-columns: 10% 90%;
+ 
+}
+
+.centro_incio{
+    display: grid;
+    height: 100vh;
+
+
+}
+.productos{
+  height: 100vh;
+ 
+}
+
+
