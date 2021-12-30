@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -12,14 +13,18 @@ const routes: Routes = [
   { 
     path: 'productos',
     component: ProductosComponent,
-    loadChildren: () => import('./componentes/componentes.module').then(m => m.ComponentesModule)
     
    
   }
 ];
 
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

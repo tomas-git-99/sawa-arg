@@ -6,6 +6,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { ProductoComponent } from './productos/producto/producto.component';
 import { ViewProductoComponent } from './view-producto/view-producto.component';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   exports: [
     NavbarComponent,

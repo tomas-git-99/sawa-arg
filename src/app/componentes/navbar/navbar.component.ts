@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServicioService } from '../funciones/servicio.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,10 +9,20 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor( private router:Router) { }
+  valor:boolean = true;
+  @ViewChild('value')value!:ElementRef<HTMLInputElement>;
 
-  ngOnInit(): void {
- 
+  constructor( private router:Router, private servicio:ServicioService) { 
+ /*    this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.min.css") */
+    this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+
   }
-
+  
+  ngOnInit(): void {
+    
+  }
+  
+  prueba(){
+    this.valor = !this.valor; 
+  }
 }
