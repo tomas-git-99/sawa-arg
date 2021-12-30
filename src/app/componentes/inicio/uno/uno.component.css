@@ -1,8 +1,9 @@
 .datos_contactos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90%;
+    height: 90vh;
     align-content: center;
+   
     --animate-duration: 1.5s;
 }
 
@@ -29,8 +30,12 @@
 }
 
 .centrar_contacto p{
-    color: #3D3D3D;
-    font-size: 18px;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.centrar_contacto h1{
+    color: #727171;
 }
 .imagen_inicio{
     place-self: center;
@@ -38,14 +43,15 @@
 
 
 .redondo{
-    width:  600px;
-    height: 600px;
+    width:  400px;
+    height: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 50%;
 }
 .boton_contacto{
     display: grid;
     justify-items: center;
+ 
     margin-top: 100px;
 }
 .boton_contacto button{

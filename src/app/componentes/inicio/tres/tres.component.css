@@ -11,8 +11,8 @@
   
   display: grid;
   align-items: center;
-  width: 1600px;
-  height: 900px;
+  width: 1200px;
+  height: 800px;
   
   font-family: 'Poppins', sans-serif;
   font-weight:500; 
@@ -27,6 +27,8 @@
   display:grid;
   justify-content: center;
   text-align: center;
+  color: #a4a4a4
+
 }
 .clientes{
     display: grid;
@@ -34,7 +36,7 @@
     row-gap: 40px;
 }
 .primer_carousel{
-  width:1200px;
+  width:1000px;
 
 }
 .carousel {
@@ -80,14 +82,29 @@
 }
 .titulo_prevencion{
   padding-bottom: 15px;
+  color: #a4a4a4
+
 }
 
 .titulo_normas{
   padding-bottom: 15px;
+  color: #a4a4a4
+
 
 }
 
 .titulo_servicio{
   padding-bottom: 60px;
+  color: #a4a4a4
 
+}
+
+
+.datos h3{
+  color: #a4a4a4
+
+}
+.datos p{
+  font-size: 14px;
+  color: #a4a4a4
 }

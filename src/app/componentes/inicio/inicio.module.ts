@@ -5,6 +5,7 @@ import { ComponentesModule } from '../componentes.module';
 import { UnoComponent } from './uno/uno.component';
 import { DosComponent } from './dos/dos.component';
 import { TresComponent } from './tres/tres.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -19,7 +20,8 @@ import { TresComponent } from './tres/tres.component';
   ],
   imports: [
     CommonModule,
-    ComponentesModule
+    ComponentesModule,
+    AppRoutingModule
   ],
   exports: [
     InicioComponent
