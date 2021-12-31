@@ -7,6 +7,7 @@ import { ProductoComponent } from './productos/producto/producto.component';
 import { ViewProductoComponent } from './view-producto/view-producto.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
+import { ContactosComponent } from './contactos/contactos.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AppRoutingModule } from '../app-routing.module';
     ProductosComponent,
     ProductoComponent,
     ViewProductoComponent,
+    ContactosComponent,
 
   ],
   imports: [

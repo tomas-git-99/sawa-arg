@@ -1,0 +1,107 @@
+.barra{
+    height:100vh;
+    background: #F02D3A;
+}
+
+.inicio{
+    display: grid;
+    grid-template-columns: 10% 90%;
+ 
+}
+
+.centro_incio{
+    display: grid;
+    height: 100vh;
+
+
+}
+.productos{
+  height: 100vh;
+  border: 1px solid;
+}
+.contacto{
+    display: grid;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid red;
+    width:   90vw;
+    height : 90vh;
+}
+.titulo_datos{
+    text-align: center;
+}
+.datos{
+    display: grid;
+    background: white;
+    border-radius: 25px;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo_formulario{
+    text-align: center;
+}
+
+.formulario{
+    display: grid;
+    width: 400px;
+    row-gap: 10px;
+    
+}
+.formulario_dividir{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+.button_enviar{
+    display: grid;
+    justify-content:center;
+}
+.info{
+    font-size:12px;
+}
+.data{
+    place-self: center;
+    display:grid;
+    justify-content: center;
+    
+    width: 400px;
+}
+
+.contenido_data{
+   display:grid;
+   justify-items: center;
+   align-content: center;
+    border-radius: 15px;
+    background: #DD0426;
+    width: 300px;
+    height: 200px;
+    color: white;
+}
+.titulo_contac{
+    text-align: center;
+}
+.contactar{
+display: flex;
+flex-direction: column;
+}
+
+.contactar label{
+    font-family: 'Poppins', sans-serif;
+    font-weight:800; 
+
+    font-size: 15px;
+}
+
+.contactar span{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300; 
+}
