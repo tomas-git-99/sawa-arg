@@ -21,5 +21,12 @@
   height: 100vh;
  
 }
-
+.titulo_productos{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:800; 
+    color: #a4a4a4;
+    display: grid;
+    justify-content: center;
+}
 

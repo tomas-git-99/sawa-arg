@@ -6,10 +6,22 @@
         
         <div class="centro_incio">
             
-            <app-view-producto *ngIf="false" class="animate__animated animate__zoomInUp"></app-view-producto>
+            
             <div class="productos">
+                <app-view-producto *ngIf="estado" ></app-view-producto>
+
                 <app-navbar></app-navbar>
+                <br>
+                <br>
+
+                <div class="titulo_productos">
+                    <h1>Nuestros Productos</h1>
+                    <hr>
+                </div>
+
                 <app-producto></app-producto>
+
+               
             </div>
     
 

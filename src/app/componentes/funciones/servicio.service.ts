@@ -1,12 +1,21 @@
-import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { EventEmitter, Injectable } from "@angular/core";
+import { Observable, of } from "rxjs";
+import { delay } from "rxjs/operators";
 
+import Productos from '../../../assets/productos.json';
 @Injectable({
+
   providedIn: 'root'
 })
 export class ServicioService {
 
-  constructor() { }
+  salirProducto$ = new EventEmitter<boolean>();
 
+  constructor() {
+    
+   }
+ 
 
   loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
@@ -18,4 +27,13 @@ export class ServicioService {
     body.appendChild(script);
   }
 
+
+
+  cargarInfo(id:number | string) {
+
+    const productos:any = Productos;
+    let producto = productos.find( (e:any) => e.id == id);
+
+    return producto
+  }
 }

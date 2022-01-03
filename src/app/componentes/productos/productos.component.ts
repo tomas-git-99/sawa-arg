@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioService } from '../funciones/servicio.service';
+
+
 
 @Component({
   selector: 'app-productos',
@@ -7,11 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductosComponent implements OnInit {
 
-  constructor() { }
+  estado: boolean = false;
+  constructor(private service:ServicioService) { 
+  }
 
 
   ngOnInit(): void {
- 
+    
+    this.service.salirProducto$.subscribe( e => {
+      this.estado = e;
+    })
+
+    
   }
 
+
+  
+  
 }

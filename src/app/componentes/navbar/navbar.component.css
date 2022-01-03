@@ -47,3 +47,19 @@ ul{
 #boton_inlges label{
     padding-left: 10px;
 }
+
+.icono{
+    display: grid;
+    position: absolute;
+
+    width:  100px;
+    height: 100px;
+    left: 300px;
+    /* background: #FFFFFF; */
+    border-radius: 0 0 15px 15px;
+}
+
+.icono img{
+    place-self: center;
+    width: 70px;
+}
