@@ -12,10 +12,12 @@
 }
 
 .icon{
-    border-radius: 50%;
-    background: white;
+/*     border-radius: 50%;
+    background: white; */
     width:  57px;
     height: 57px;
+    display: grid;
+    place-content: center;
 }
 
 .iconos{

@@ -1,15 +1,26 @@
-<ul>
-    <div class="icono">
-        <img src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2Flogo%2Fsawa-new.png?alt=media&token=26d3af2d-2adc-4d9a-9bc2-d221f264df10" alt="">
-    </div>
-    <li ><a [routerLink]="['/']">INICIO</a></li>
-    <li ><a [routerLink]="['/productos']">PRODUCTOS</a></li>
-    <li ><a [routerLink]="['/contacto']" >CONTACTOS</a></li>
-    <div class="boton_idiomas">
-         <label for="" class="boton_español">ESP</label>
-        <div class="form-check form-switch" id="boton_inlges">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">ENG</label>
-          </div>
-    </div>
-</ul>
+
+<div class="navbar_menu">
+    
+        <div class="menu" (click)="abrirNavbar()">
+            <img style="width: 40px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/more.png?alt=media&token=5b49b0a9-a825-45c9-9b3a-2c2fe70562d3" alt="">
+        </div>
+    
+    <ul class="navbar_class" #navbar>
+        <div class="icono" (click)="volverMenu()">
+            <img src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2Flogo%2Fsawa-new.png?alt=media&token=26d3af2d-2adc-4d9a-9bc2-d221f264df10" alt="">
+        </div>
+    
+        <li ><a [routerLink]="['/']">INICIO</a></li>
+        <li ><a [routerLink]="['/productos']">PRODUCTOS</a></li>
+        <li ><a [routerLink]="['/contacto']" >CONTACTOS</a></li>
+        <div class="boton_idiomas">
+             <label for="" class="boton_español">ESP</label>
+            <div class="form-check form-switch" id="boton_inlges">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">ENG</label>
+              </div>
+        </div>
+    </ul>
+
+</div>    
+

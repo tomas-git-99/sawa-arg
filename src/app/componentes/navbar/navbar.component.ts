@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
 
   valor:boolean = true;
   @ViewChild('value')value!:ElementRef<HTMLInputElement>;
+  @ViewChild('navbar')navbar!:ElementRef<HTMLInputElement>;
 
   constructor( private router:Router, private servicio:ServicioService) { 
  /*    this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.min.css") */
@@ -24,5 +25,16 @@ export class NavbarComponent implements OnInit {
   
   prueba(){
     this.valor = !this.valor; 
+  }
+
+
+  abrirNavbar(){
+    this.navbar.nativeElement.style.left = "72%"; 
+    this.navbar.nativeElement.style.zIndex = "300"; 
+  }
+
+  volverMenu(){
+    this.navbar.nativeElement.style.left = "100%"; 
+    this.navbar.nativeElement.style.zIndex = "0"; 
   }
 }

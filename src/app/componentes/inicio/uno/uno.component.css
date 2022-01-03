@@ -1,7 +1,8 @@
 .datos_contactos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
+
+    height: 100vh;
     align-content: center;
    
     --animate-duration: 1.5s;
@@ -10,15 +11,15 @@
 .precentacion{
 
     display: grid;
-    height: 90vh;
+    height: 50vh;
     /* text-align: center; */
     align-content: center;
     justify-items: center;
 }
 .centrar_contacto{
     text-align: justify;
-    width: 90%;
-
+    width: 100%;
+    
 }
 .centrar_contacto h1{
  
@@ -38,13 +39,15 @@
     color: #727171;
 }
 .imagen_inicio{
+    display: grid;
+    
     place-self: center;
 }
 
 
 .redondo{
-    width:  450px;
-    height: 450px;
+    width:  500px;
+    height: 500px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 50%;
     overflow: hidden;
@@ -53,12 +56,10 @@
     align-items: center;
 }
 
-.redondo img{
-}
+
 .boton_contacto{
     display: grid;
     justify-items: center;
- 
     margin-top: 100px;
 }
 .boton_contacto button{
@@ -69,4 +70,42 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #F02D3A;
     color: white;
+}
+
+
+@media (max-width: 767px){
+
+ 
+
+    .datos_contactos{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        width: 100%;
+        
+        /* align-content: end; */
+        place-items: center;
+    }
+
+    .redondo{
+        width:  300px;
+        height: 300px;
+      
+    }
+    .boton_contacto{
+        margin-top: 10px;
+    }
+    .imagen_inicio{
+/*         display: none;
+        visibility: hidden; */
+
+  /*   height: 60vh; */
+
+  padding-top:100px;
+    justify-content:center;
+    align-items: center;
+    }
+    .precentacion{
+        height: auto;
+    }
 }

@@ -17,3 +17,22 @@ html {
 html::-webkit-scrollbar {
     width: 0px; /* For Chrome, Safari, and Opera */
 }
+
+
+
+@media (max-width: 767px){
+/* 
+    .navbar_class{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+    }
+    .navbar_class ul {
+        padding-left: 0px;
+
+    }
+
+ */
+
+
+}
