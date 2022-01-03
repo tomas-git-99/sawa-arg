@@ -1,0 +1,26 @@
+.final{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    background: #273043;
+    padding-left: 150px;
+}
+
+.derechos p{
+    color: #D3D3D3;
+}
+
+.icon{
+    border-radius: 50%;
+    background: white;
+    width:  57px;
+    height: 57px;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}

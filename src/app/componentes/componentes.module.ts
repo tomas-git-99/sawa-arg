@@ -8,6 +8,7 @@ import { ViewProductoComponent } from './view-producto/view-producto.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { ContactosComponent } from './contactos/contactos.component';
+import { FinalComponent } from './final/final.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ContactosComponent } from './contactos/contactos.component';
     ProductoComponent,
     ViewProductoComponent,
     ContactosComponent,
+    FinalComponent,
 
   ],
   imports: [
@@ -25,6 +27,7 @@ import { ContactosComponent } from './contactos/contactos.component';
   ],
   exports: [
     NavbarComponent,
+    FinalComponent
 ]
 })
 export class ComponentesModule { }

@@ -4,16 +4,13 @@
         "id": "1",
         "nombre": "Válvulas de presión y vacío",
         "descripcion": "Las válvulas de presión y vacío son necesarias cuando los productos son volátiles, cuando se necesita presurizar el tanque para que los vapores no se pierdan libremente en la atmósfera. Por este motivo es necesario colocar en el venteo una válvula de presión y vacío, de esta manera cerramos el tanque herméticamente, mientras no entra y sale producto del mismo, liberando los gases a partir de los rangos de presión y vacío preestablecidos en la válvula, de acuerdo a los valores de diseño del tanque. \n La válvula de presión y vacío es usada en tanques atmosféricos de almacenaje de concentrado de espuma, líquidos inflamables, alimentos y combustibles.",
-        "Materiales": "Cuerpo de acero inoxidable, acero al carbono, polipropileno. Obturadores: igual material que el cuerpo. Guías de acero inoxidable y polipropileno. Asientos: Varían dependiendo de los gases pasantes, conexiones con o sin sobresalto.",
-        "fotos": [
-            {
-                "foto":"hola"
-   
-            },
-            {
-                "foto":"adios"
-            }
-        ]
+        "materiales": "Cuerpo de acero inoxidable, acero al carbono, polipropileno. Obturadores: igual material que el cuerpo. Guías de acero inoxidable y polipropileno. Asientos: Varían dependiendo de los gases pasantes, conexiones con o sin sobresalto."
+      },
+      {
+        "id": "2",
+        "nombre": "Bocas de medición y sondeo",
+        "descripcion": "Las válvulas de presión y vacío son necesarias cuando los productos son volátiles, cuando se necesita presurizar el tanque para que los vapores no se pierdan libremente en la atmósfera. Por este motivo es necesario colocar en el venteo una válvula de presión y vacío, de esta manera cerramos el tanque herméticamente, mientras no entra y sale producto del mismo, liberando los gases a partir de los rangos de presión y vacío preestablecidos en la válvula, de acuerdo a los valores de diseño del tanque. \n La válvula de presión y vacío es usada en tanques atmosféricos de almacenaje de concentrado de espuma, líquidos inflamables, alimentos y combustibles.",
+        "materiales": "Cuerpo de acero inoxidable, acero al carbono, polipropileno. Obturadores: igual material que el cuerpo. Guías de acero inoxidable y polipropileno. Asientos: Varían dependiendo de los gases pasantes, conexiones con o sin sobresalto."
       }
     ]
 }

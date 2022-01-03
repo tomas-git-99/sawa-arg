@@ -16,7 +16,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     InicioComponent,
     UnoComponent,
     DosComponent,
-    TresComponent
+    TresComponent,
+    
   ],
   imports: [
     CommonModule,
