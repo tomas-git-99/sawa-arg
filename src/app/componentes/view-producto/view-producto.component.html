@@ -4,17 +4,16 @@
         <button type="button" class="btn-close" aria-label="Close" id="boton_salir" (click)="onSalir()"></button>
 
         <div class="titulo_productos">
-            <h2>Bocas de medición y sondeo</h2>
+            <h2>{{item.nombre}}</h2>
         </div>
 
         <div class="carousel_2">
             <div class="cortar_imagenes">
                 <div class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false }'>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"><img src="{{item.imagen1}}"></div>
+                    <div class="carousel-cell" *ngIf="item.imagen2 == null || item.imagen2.length == 0 ? false : item.imagen2"><img src="{{item.imagen2}}"></div>
+                    <div class="carousel-cell" *ngIf="item.imagen3 == null || item.imagen3.length == 0 ? false : item.imagen3"><img src="{{item.imagen3}}"></div>
+        
                   </div>
 
             </div>
@@ -25,14 +24,24 @@
             <div class="descripcion_titulo">
                <h3>Descripcion</h3>
            </div>
-           <p>La boca de medición o sondeo esta específicamente diseñada para ser utilizada como válvula de presión y vacío en los techos de tanques con productos líquidos e inflamables.
-            Este diseño comprende la posibilidad de poder verificar la cantidad de producto que contiene, medir la temperatura y tomar muestras.
-            
-            <br> Desde Metalúrgica SAWA comprendemos la importancia de las mediciones y por ende, fabricamos bocas de sondeo teniendo en cuenta todas las posibilidades y usos . 
-            La boca de sondeo está diseñada para ser utilizada en recipientes presurizados por encima de ese rango y se cierra completamente con hermeticidad, cumpliendo la función 
-            de Boca de sondeo con y válvula de presión y vacío.</p>
+           <p>{{item.descripcion}}</p>
 
+           <div class="material" *ngIf="item.materiales == null || item.materiales.length == 0 ? false : true">
+               <div class="titulo_material">
+                   <h3>Material</h3>
+                   <p>{{item.materiales}}</p>
+               </div>
+
+               <div class="titulo_diametro"  *ngIf="item.diametros == null || item.diametros.length == 0 ? false : true">
+                   <label for="">Diametros: <span>{{item.diametros }}</span> </label>
+                   <label for="" *ngIf="item.tipo == null || item.tipo.length == 0 ? false : true">Tipos: <span>{{ item.tipo[0].nombre + ", " + item.tipo[1].nombre }}</span></label>
+                </div>
+    
+
+           </div>
         </div>
+
+
         <div class="soyelboton">
             <button  class="btn btn-primary btn-lg">Consultar</button>
         </div>

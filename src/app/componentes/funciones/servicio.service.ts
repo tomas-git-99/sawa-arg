@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { EventEmitter, Injectable } from "@angular/core";
-import { Observable, of } from "rxjs";
+import { Observable, of, Subject } from "rxjs";
 import { delay } from "rxjs/operators";
 
 import Productos from '../../../assets/productos.json';
@@ -10,7 +10,15 @@ import Productos from '../../../assets/productos.json';
 })
 export class ServicioService {
 
+
   salirProducto$ = new EventEmitter<boolean>();
+  abrirProducto$ = new EventEmitter<boolean>();
+
+
+  datosProducto$ = new EventEmitter<any>();
+  dataProducto$ = new EventEmitter<any>();
+
+
 
   constructor() {
     
@@ -32,8 +40,9 @@ export class ServicioService {
   cargarInfo(id:number | string) {
 
     const productos:any = Productos;
-    let producto = productos.find( (e:any) => e.id == id);
+    let producto = productos.Productos.find( (e:any) => e.id == id);
 
+  
     return producto
   }
 }

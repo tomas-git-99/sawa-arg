@@ -8,7 +8,7 @@
             
             
             <div class="productos">
-                <app-view-producto *ngIf="estado" ></app-view-producto>
+                <app-view-producto  *ngIf="estado" [item]="nombre"></app-view-producto>
 
                 <app-navbar></app-navbar>
                 <br>
@@ -19,7 +19,7 @@
                     <hr>
                 </div>
 
-                <app-producto></app-producto>
+                <app-producto ></app-producto>
 
                
             </div>
@@ -31,3 +31,6 @@
 
 <app-final></app-final>
 </div>
+
+
+<!--  -->

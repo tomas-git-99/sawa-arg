@@ -10,6 +10,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ContactosComponent } from './contactos/contactos.component';
 import { FinalComponent } from './final/final.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ServicioService } from './funciones/servicio.service';
+import { ConsultarComponent } from './consultar/consultar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ViewProductoComponent,
     ContactosComponent,
     FinalComponent,
+    ConsultarComponent,
 
   ],
   imports: [
@@ -29,7 +32,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   exports: [
     NavbarComponent,
-    FinalComponent
-]
+    FinalComponent,
+    ConsultarComponent
+],
+providers: [ServicioService]
 })
 export class ComponentesModule { }

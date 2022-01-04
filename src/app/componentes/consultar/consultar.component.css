@@ -1,0 +1,51 @@
+.consulta{
+    width:400px;
+    height:auto;
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius:15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+}
+
+.icono_formulario{
+    margin-top: 10px;
+    place-self: center;
+}
+
+.consulta form{
+    display: grid;
+    gap: 20px;
+}
+.botono_enviar{
+    display: grid;
+
+    justify-content: center;
+
+
+    margin-bottom:10px;
+}
+.consulta_formulario{
+    
+    position: fixed;
+    display: grid;
+    width:100%;
+    height:100vh;
+    
+    border:5px solid;
+    justify-items: center;
+    align-items: center;
+
+    z-index: 10000;
+}
+
+#boton_salir{
+    place-self: start;
+    position: fixed;
+    padding-top:  30px;
+    padding-left: 30px;
+
+   }

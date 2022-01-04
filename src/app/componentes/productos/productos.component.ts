@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ServicioService } from '../funciones/servicio.service';
 
 
@@ -11,18 +11,30 @@ import { ServicioService } from '../funciones/servicio.service';
 export class ProductosComponent implements OnInit {
 
   estado: boolean = false;
+
+  nombre: any;
+
   constructor(private service:ServicioService) { 
   }
 
 
   ngOnInit(): void {
+
+
+    this.service.datosProducto$.subscribe(e => {
+
+     this.nombre = e
+    })
     
     this.service.salirProducto$.subscribe( e => {
-      this.estado = e;
-    })
 
+      this.estado = e;
+
+    })
     
   }
+
+
 
 
   

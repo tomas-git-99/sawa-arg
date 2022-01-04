@@ -1,6 +1,6 @@
 .barra{
 
-    height:170vh;
+    height:180vh;
     background: #F02D3A;
 }
 
@@ -30,10 +30,18 @@
 }
 
 
+@media (max-width: 1050px){
+    .barra{
+
+        height:230vh;
+       
+    }
+}
+
 @media (max-width: 767px){
     .barra{
 
-        height:380vh;
+        height:370vh;
        
     }
     

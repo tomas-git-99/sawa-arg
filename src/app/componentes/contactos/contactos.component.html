@@ -42,7 +42,10 @@
               </div>
 
             <div class="formulario">
-                <form [formGroup]="myFormulario">
+                <form 
+                [formGroup]='myFormulario'
+                (ngSubmit)="formulario(myFormulario.value)" 
+                >
 
                     <div class="titulo_formulario">
                       <h2>Formulario de contacto</h2>
@@ -57,6 +60,7 @@
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                           placeholder="Ingrese su nombre"
+                          name="nombre"
                           formControlName="nombre"
                         />
                       </div>
@@ -68,9 +72,13 @@
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                           placeholder="Ingrese su email"
+                          name="email"
+
+                          formControlName="email"
+
                         />
                       </div>
-                      <div class="form-group">
+                      <div class="form-group" *ngIf>
                         <label for="exampleInputEmail1"
                           >Telefono <span>(opcional)</span>
                         </label>
@@ -80,6 +88,7 @@
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                           placeholder="Ingrese su telefono"
+                          
                         />
                       </div>
                     </div>
@@ -90,6 +99,8 @@
                         class="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"
+                        name="mensaje"
+                        formControlName="mensaje"
                       ></textarea>
                     </div>
     
@@ -99,7 +110,7 @@
                     >
     
                     <div class="button_enviar">
-                      <button type="button" class="btn btn-primary btn-lg">
+                      <button type="submit"  class="btn btn-primary btn-lg">
                         Enviar
                       </button>
                     </div>

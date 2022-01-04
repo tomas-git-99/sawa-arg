@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ServicioService } from '../funciones/servicio.service';
 
 @Component({
   selector: 'app-contactos',
@@ -8,17 +9,24 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactosComponent implements OnInit {
 
-  
-  constructor() { }
-  myFormulario = FormGroup;
+  myFormulario!:FormGroup;
+
+
+  constructor(  private _builder: FormBuilder, private service:ServicioService) { 
+    this.myFormulario = this._builder.group({
+      nombre:  ['', Validators.required],
+      email:   ['', Validators.compose([Validators.email, Validators.required])],
+      mensaje: ['', Validators.required],
+    })
+  }
   
   ngOnInit(): void {
+
+
   }
 
 
-  formulario() {
-    myFormulario = new FormGroup({
-      nombre:
-    })
+  formulario(data:any) {
+    console.log(data);
   }
 }
