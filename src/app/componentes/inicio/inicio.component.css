@@ -16,7 +16,7 @@
     display: grid;
     height: 100vh;
 
-
+    gap: 20px;
 }
 .inicio{
     display: grid;
@@ -32,14 +32,31 @@
 
 
 .productos{
-    height: 100vh;
+    height: 100%;
     width: 90vw;
+
 
 
 }
 
 .clientes{
-    height: 100vh;
+   
+    height: 100%;
     width:  90vw;
 }
 
+
+@media (max-width: 1050px){
+    .barra{
+   
+        height: 360vh;
+      
+    }
+  }
+@media (max-width: 767px){
+    .barra{
+   
+        height: 560vh;
+      
+    }
+}

@@ -94,9 +94,11 @@ ul{
 
         place-items: center;
 
-        left:  100%;
+        right:-120px;
 
         transition: all .5s;
+
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
         
     }
     .navbar_menu{

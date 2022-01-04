@@ -92,3 +92,16 @@
     color: white;
   }
   
+
+@media (max-width: 1050px){
+  .contenedor{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  }
+@media (max-width: 767px){
+  .contenedor{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

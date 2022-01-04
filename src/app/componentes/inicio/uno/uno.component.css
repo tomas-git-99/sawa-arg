@@ -15,17 +15,21 @@
     /* text-align: center; */
     align-content: center;
     justify-items: center;
+    
+   
 }
 .centrar_contacto{
+    display: grid;
+    gap: 30px;
     text-align: justify;
-    width: 100%;
+    width: 90%;
     
 }
 .centrar_contacto h1{
  
     font-family: 'Poppins', sans-serif;
     font-weight:500; 
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 10px;
     
 }
@@ -72,7 +76,13 @@
     color: white;
 }
 
-
+@media (max-width: 1050px){
+    .redondo{
+        width:  350px;
+        height: 350px;
+      
+    }
+  }
 @media (max-width: 767px){
 
  
@@ -96,8 +106,8 @@
         margin-top: 10px;
     }
     .imagen_inicio{
-/*         display: none;
-        visibility: hidden; */
+        display: none;
+        visibility: hidden;
 
   /*   height: 60vh; */
 

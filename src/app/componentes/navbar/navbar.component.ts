@@ -29,12 +29,12 @@ export class NavbarComponent implements OnInit {
 
 
   abrirNavbar(){
-    this.navbar.nativeElement.style.left = "72%"; 
+    this.navbar.nativeElement.style.right = "0"; 
     this.navbar.nativeElement.style.zIndex = "300"; 
   }
 
   volverMenu(){
-    this.navbar.nativeElement.style.left = "100%"; 
+    this.navbar.nativeElement.style.right = "-120px"; 
     this.navbar.nativeElement.style.zIndex = "0"; 
   }
 }

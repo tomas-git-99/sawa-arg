@@ -1,5 +1,5 @@
 .barra{
-    height:100vh;
+    height:110vh;
     background: #F02D3A;
 }
 
@@ -12,11 +12,10 @@
 .centro_incio{
     display: grid;
     height: 100vh;
-
-
+    
 }
 .productos{
-  height: 100vh;
+    height: 100vh;
 }
 .contacto{
     display: grid;
@@ -30,6 +29,7 @@
     text-align: center;
 }
 .datos{
+    gap: 10px;
     display: grid;
     background: white;
     border-radius: 25px;
@@ -107,3 +107,44 @@ flex-direction: column;
     font-family: 'Poppins', sans-serif;
     font-weight:200; 
 }
+
+@media (max-width: 1050px){
+
+    }
+  @media (max-width: 767px){
+      .datos_contacto{
+          grid-template-columns: 1fr;
+      }
+      .datos{
+          width: 90vw;
+          height: 100%;
+    gap: 20px;
+
+      }
+      .formulario_dividir{
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+
+    textarea{
+        width: 80%;
+        place-self: center;
+        
+    }
+    #mensaje{
+        display: grid;
+        place-self: center;
+        width: 90%;
+    }
+    #mensaje label{
+        text-align: center;
+    }
+    .info{
+        place-self: center;
+        width: 80%;
+    }
+
+  }

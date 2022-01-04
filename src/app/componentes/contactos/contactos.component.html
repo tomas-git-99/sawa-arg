@@ -1,86 +1,116 @@
 <div class="contenido">
-    
-    <div class="inicio">
-        
-        <div class="barra"></div>
-        
-        <div class="centro_incio">
-            
-            <div class="productos">
-                <app-navbar></app-navbar>
+  <div class="inicio">
+    <div class="barra"></div>
 
-                <div class="contacto">
+    <div class="centro_incio">
+      <div class="productos">
+        <app-navbar></app-navbar>
 
-                    <div class="datos">
+        <div class="contacto">
+          <div class="datos">
+            <div class="titulo_datos">
+              <img
+                style="width: 90px"
+                src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2Flogo%2Fsawa-new.png?alt=media&token=26d3af2d-2adc-4d9a-9bc2-d221f264df10"
+                alt=""
+              />
+            </div>
 
-                        <div class="titulo_datos">
-                            <img style="width:90px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2Flogo%2Fsawa-new.png?alt=media&token=26d3af2d-2adc-4d9a-9bc2-d221f264df10" alt="">
-
-                        </div>
-
-                        <div class="datos_contacto">
-
-                            
-                            
-                            <div class="data">
-                                <div class="contenido_data">
-                
-                                    <!-- <div class="titulo_contac">
+            <div class="datos_contacto">
+              <div class="data">
+                <div class="contenido_data">
+                  <!-- <div class="titulo_contac">
                                         <h3>Contacto SAWA </h3>
                                     </div> -->
 
-                                    <div class="contactar">
-
-                                        <label for=""><img style="width:35px;" src="https://img.icons8.com/glyph-neue/64/000000/phone-office.png"/> Telefono: <span>sawa_sm@hotmail.com</span> </label>
-                                        <label for=""><img style="width:35px;" src="https://img.icons8.com/ios-filled/50/000000/email-open.png"/>Email: <span>52933474</span> </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="formulario">
-                                <div class="titulo_formulario">
-                                   <h2>Formulario de contacto</h2>
-                                </div>
-                                <div class="formulario_dividir">
-
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Nombre*</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="exampleInputEmail1">Email*</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="exampleInputEmail1">Telefono <span>(opcional)</span> </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su telefono">
-                                      </div>
-        
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlTextarea1">Mensaje*</label>
-                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-
-                                  <span class="info">*Comunicate a través de nuestros formularios de atención online.  
-                                    Un asesor te responderá a la brevedad</span>
-                                    <div class="button_enviar">
-
-                                        <button type="button" class="btn btn-primary btn-lg">Enviar</button>
-                                    </div>
-    
-                            </div>
-                        </div>
-
-                    </div>
+                  <div class="contactar">
+                    <label for=""
+                      ><img
+                        style="width: 35px"
+                        src="https://img.icons8.com/glyph-neue/64/000000/phone-office.png"
+                      />
+                      Telefono: <span>sawa_sm@hotmail.com</span>
+                    </label>
+                    <label for=""
+                      ><img
+                        style="width: 35px"
+                        src="https://img.icons8.com/ios-filled/50/000000/email-open.png"
+                      />Email: <span>52933474</span>
+                    </label>
+                  </div>
                 </div>
-            </div>
+              </div>
+
+            <div class="formulario">
+                <form [formGroup]="myFormulario">
+
+                    <div class="titulo_formulario">
+                      <h2>Formulario de contacto</h2>
+                    </div>
     
+                    <div class="formulario_dividir">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre*</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Ingrese su nombre"
+                          formControlName="nombre"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email*</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Ingrese su email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1"
+                          >Telefono <span>(opcional)</span>
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Ingrese su telefono"
+                        />
+                      </div>
+                    </div>
+    
+                    <div class="form-group" id="mensaje">
+                      <label for="exampleFormControlTextarea1">Mensaje*</label>
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+    
+                    <span class="info"
+                      >*Comunicate a través de nuestros formularios de atención
+                      online. Un asesor te responderá a la brevedad</span
+                    >
+    
+                    <div class="button_enviar">
+                      <button type="button" class="btn btn-primary btn-lg">
+                        Enviar
+                      </button>
+                    </div>
 
+                </form>              
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
+  </div>
 
-<app-final></app-final>
+  <app-final></app-final>
 </div>

@@ -34,6 +34,7 @@
     display: grid;
     justify-content: center;
     row-gap: 40px;
+    
 }
 .primer_carousel{
   width:1000px;
@@ -115,4 +116,36 @@
 .datos p{
   font-size: 14px;
   color: #a4a4a4
+}
+
+@media (max-width: 1050px){
+  .contenido{
+    width: 85vw;
+    height: 100%;
+  }
+  .primer_carousel{
+    width:80vw;
+  
+  }
+  .carousel-cell{
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px){
+  .contenido{
+    width: 350px;
+    height: 1500px;
+  }
+  .datos{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .primer_carousel{
+    width:340px;
+  
+  }
+  .carousel-cell{
+    width: 50%;
+  }
 }

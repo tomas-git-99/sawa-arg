@@ -17,7 +17,7 @@
 
 }
 .productos{
-  height: 100vh;
+  height: 100%;
  
 }
 .titulo_productos{
@@ -29,3 +29,12 @@
     justify-content: center;
 }
 
+
+@media (max-width: 767px){
+    .barra{
+
+        height:380vh;
+       
+    }
+    
+  }

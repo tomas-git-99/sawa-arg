@@ -7,7 +7,8 @@
     padding-left: 150px;
 }
 
-.derechos p{
+.derechos p{font-family: 'Poppins', sans-serif;
+    font-weight:300; 
     color: #D3D3D3;
 }
 
@@ -25,4 +26,20 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 30px;
+}
+
+
+@media (max-width: 767px){
+ .final{
+    padding-left: 0px;
+    height: 150px;
+ }
+
+ .derechos {
+    margin-bottom:70px;
+}
+.derechos p{
+    
+    font-size: 12px;
+}
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contactos',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactosComponent implements OnInit {
 
+  
   constructor() { }
-
+  myFormulario = FormGroup;
+  
   ngOnInit(): void {
   }
 
+
+  formulario() {
+    myFormulario = new FormGroup({
+      nombre:
+    })
+  }
 }
