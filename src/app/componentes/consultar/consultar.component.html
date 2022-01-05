@@ -1,9 +1,11 @@
 
 <div class="consulta_formulario">
     <div class="consulta">
-        <button type="button" class="btn-close" aria-label="Close" id="boton_salir" ></button>
+        <button type="button" class="btn-close" aria-label="Close" id="boton_salir" (click)="cerrar()" ></button>
         <form     [formGroup]='myFormulario'
-        (ngSubmit)="formulario(myFormulario.value)" >
+        (ngSubmit)="formulario(myFormulario.value)"
+      
+        >
             <div class="icono_formulario">
 
                 <img  style="width: 70px;"src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2Flogo%2Fsawa-new.png?alt=media&token=26d3af2d-2adc-4d9a-9bc2-d221f264df10" alt="">
@@ -34,17 +36,19 @@
 
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Mensaje*</label>
-              <textarea class="form-control" 
+              <textarea 
+              class="form-control" 
               id="exampleFormControlTextarea1" 
-              rows="3"
-              name="mensaje"
-              formControlName="mensaje"
+              rows="5"
+              name="message"
+              formControlName="message"
+             
               ></textarea>
             </div>
 
             <div class="botono_enviar">
 
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
             </div>
           </form>
     </div>

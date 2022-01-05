@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
 import { ServicioService } from '../../funciones/servicio.service';
 
 @Component({
@@ -8,16 +9,22 @@ import { ServicioService } from '../../funciones/servicio.service';
 })
 export class DosComponent implements OnInit {
 
+  @Output() nombreDeProducto: EventEmitter<string> = new EventEmitter();
+
   constructor(private service:ServicioService) { }
 
   ngOnInit(): void {
   }
 
   abrirConsulta(id:string | number){
+
     let producto = this.service.cargarInfo(id);
 
-    console.log(producto.nombre);
+
+    this.nombreDeProducto.emit(producto.nombre)
+    
     this.service.abrirProducto$.emit(true);
+
   }
 
 }

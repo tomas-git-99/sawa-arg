@@ -8,7 +8,7 @@ import { ServicioService } from '../funciones/servicio.service';
 })
 export class InicioComponent implements OnInit {
 
-
+  nombreHijo:string = '';
   estadoConsulta: boolean = false;
   constructor(private servicio:ServicioService) { 
   /*   this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.min.css") */

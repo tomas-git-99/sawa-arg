@@ -1,5 +1,5 @@
 .consulta{
-    width:400px;
+    width:500px;
     height:auto;
     position: fixed;
     display: grid;
@@ -20,6 +20,10 @@
     display: grid;
     gap: 20px;
 }
+
+.consulta input{
+    width: 400px;
+}
 .botono_enviar{
     display: grid;
 
@@ -35,7 +39,7 @@
     width:100%;
     height:100vh;
     
-    border:5px solid;
+   
     justify-items: center;
     align-items: center;
 

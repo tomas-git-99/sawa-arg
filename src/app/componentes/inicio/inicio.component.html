@@ -2,7 +2,7 @@
 
 <div class="contenido">
     
-    <app-consultar *ngIf="estadoConsulta"></app-consultar>
+    <app-consultar *ngIf="estadoConsulta" [nombreHijoProducto]="nombreHijo"></app-consultar>
     <div class="inicio">
 
         <div class="barra"></div>
@@ -15,7 +15,7 @@
             </div>
 
             <div class="productos">
-                <app-dos></app-dos>
+                <app-dos (nombreDeProducto)="nombreHijo = $event"></app-dos>
             </div>
 
             <div class="clientes">

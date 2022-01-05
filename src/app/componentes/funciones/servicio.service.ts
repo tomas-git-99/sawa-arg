@@ -19,6 +19,8 @@ export class ServicioService {
   dataProducto$ = new EventEmitter<any>();
 
 
+  nombreProducto = new EventEmitter<string>();
+
 
   constructor() {
     

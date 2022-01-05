@@ -134,7 +134,7 @@
 
 @media (max-width: 767px){
   .contenido{
-    width: 350px;
+    width: 85vw;
     height: 1500px;
   }
   .datos{
