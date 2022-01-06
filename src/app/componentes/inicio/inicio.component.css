@@ -55,18 +55,19 @@
         
     }
 }
-@media (max-width: 866px){
+/* @media (max-width: 866px){
     .barra{
         
         height: 3200px;
         
     }
-}
+} */
 
 @media (max-width: 780px){
     .barra{
    
-        height: 4300px;
+        min-height: 4300px;
+        max-height: 4600px;
       
     }
 }
