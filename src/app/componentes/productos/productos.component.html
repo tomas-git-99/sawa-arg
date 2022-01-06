@@ -5,13 +5,13 @@
         <div class="barra"></div>
         
         <div class="centro_incio">
+            <app-consultar *ngIf="estadoConsulta" [nombreHijoProducto]="datos_productos" ></app-consultar>
             
             
             <div class="productos">
                 
-                <app-consultar *ngIf="estadoConsulta" [nombreHijoProducto]="datos_productos" ></app-consultar>
 
-                <app-view-producto  *ngIf="estado" [item]="nombre"  ></app-view-producto>
+                <app-view-producto *ngIf="estado" [item]="nombre"  [item_data]="data_full"></app-view-producto>
 
                 <app-navbar></app-navbar>
                 <br>

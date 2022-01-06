@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { ServicioService } from '../funciones/servicio.service';
 
 
@@ -14,9 +15,17 @@ export class ProductosComponent implements OnInit {
   estadoConsulta:boolean = false;
   nombre: any;
 
+  data_full:any;
+
   datos_productos:any;
 
-  constructor(private service:ServicioService) { 
+  constructor(public translate: TranslateService, private service:ServicioService) { 
+    translate.addLangs(['en', 'es']);
+    translate.setDefaultLang('es');
+
+
+    const browserLang:any = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|es/) ? browserLang : 'es');
   }
 
 
@@ -26,6 +35,11 @@ export class ProductosComponent implements OnInit {
     this.service.datosProducto$.subscribe(e => {
 
      this.nombre = e
+    })
+
+    this.service.dataProducto$.subscribe(e => {
+    
+      this.data_full = e;
     })
     
     this.service.salirProducto$.subscribe( e => {

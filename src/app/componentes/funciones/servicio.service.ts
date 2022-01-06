@@ -23,6 +23,7 @@ export class ServicioService {
   nombreProducto = new EventEmitter<string>();
 
 
+  estado_idiomas:boolean = false;
   constructor(private http: HttpClient) {
     
    }

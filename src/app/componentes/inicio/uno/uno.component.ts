@@ -34,10 +34,10 @@ export class UnoComponent implements OnInit {
   }
 
   abrirConsulta(){
-    this.translate.use("en");
+  
     this.servicio.abrirProducto$.emit(true);
 
-    
+
     this.nombreDeProducto.emit(""); 
 
   }

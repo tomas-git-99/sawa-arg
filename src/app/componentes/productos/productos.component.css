@@ -7,13 +7,20 @@
 .inicio{
     display: grid;
     grid-template-columns: 10% 90%;
- 
-}
+  
 
+    
+}
+/* .contenido{
+    display: grid;
+} */
 .centro_incio{
+    width: 100%;
     display: grid;
     height: 100vh;
 
+
+   
 
 }
 .productos{

@@ -30,8 +30,8 @@ export class ProductoComponent implements OnInit {
     public translate: TranslateService,
     private renderer: Renderer2, 
     private servicio:ServicioService,
-     private cdr: ChangeDetectorRef,
-     private srs:ServiciosService,
+    private cdr: ChangeDetectorRef,
+    private srs:ServiciosService,
      
      ) { 
       translate.addLangs(['en', 'es']);
@@ -59,7 +59,8 @@ export class ProductoComponent implements OnInit {
     this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js");
     this.servicio.salirProducto$.emit(true);
     
-    this.servicio.datosProducto$.emit(data);
+    this.servicio.datosProducto$.emit(event);
+    this.servicio.dataProducto$.emit(data);
 
 
   }

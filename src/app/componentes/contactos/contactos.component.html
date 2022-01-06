@@ -29,13 +29,13 @@
                         style="width: 35px"
                         src="https://img.icons8.com/glyph-neue/64/000000/phone-office.png"
                       />
-                      Telefono: <span>sawa_sm@hotmail.com</span>
+                      {{'contactos.uno.telefono'| translate}}: <span>+54-11-52933474</span>
                     </label>
                     <label for=""
                       ><img
                         style="width: 35px"
                         src="https://img.icons8.com/ios-filled/50/000000/email-open.png"
-                      />Email: <span>52933474</span>
+                      />Email: <span>sawa_sm@hotmail.com</span>
                     </label>
                   </div>
                 </div>
@@ -48,18 +48,18 @@
                 >
 
                     <div class="titulo_formulario">
-                      <h2>Formulario de contacto</h2>
+                      <h2>{{'contactos.titulo'| translate}}</h2>
                     </div>
     
                     <div class="formulario_dividir">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre*</label>
+                        <label for="exampleInputEmail1">{{'contactos.dos.nombre'| translate}}*</label>
                         <input
                           type="email"
                           class="form-control"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
-                          placeholder="Ingrese su nombre"
+                          placeholder="{{'contactos.dos.Ingrese_su_nombre'| translate}}"
                           name="nombre"
                           formControlName="nombre"
                         />
@@ -71,7 +71,7 @@
                           class="form-control"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
-                          placeholder="Ingrese su email"
+                          placeholder="{{'contactos.dos.Ingrese_su_email'| translate}}"
                           name="email"
 
                           formControlName="email"
@@ -94,7 +94,7 @@
                     </div>
     
                     <div class="form-group" id="mensaje">
-                      <label for="exampleFormControlTextarea1">Mensaje*</label>
+                      <label for="exampleFormControlTextarea1">{{'contactos.dos.mensaje'| translate}}*</label>
                       <textarea
                         class="form-control"
                         id="exampleFormControlTextarea1"
@@ -105,13 +105,12 @@
                     </div>
     
                     <span class="info"
-                      >*Comunicate a través de nuestros formularios de atención
-                      online. Un asesor te responderá a la brevedad</span
+                      >{{'contactos.dos.descripcion'| translate}}</span
                     >
     
-                    <div class="button_enviar">
+                    <div class="button_enviar" #botono_enviar_form>
                       <button type="submit"  class="btn btn-primary btn-lg">
-                        Enviar
+                        {{'contactos.dos.boton'| translate}}
                       </button>
                     </div>
 

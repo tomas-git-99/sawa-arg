@@ -12,6 +12,14 @@ import { FinalComponent } from './final/final.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ServicioService } from './funciones/servicio.service';
 import { ConsultarComponent } from './consultar/consultar.component';
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');}
+
 
 
 @NgModule({
@@ -30,7 +38,16 @@ import { ConsultarComponent } from './consultar/consultar.component';
     RouterModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [ HttpClient ]
+      }
+    })
   ],
   exports: [
     NavbarComponent,

@@ -8,11 +8,12 @@
     "producto":{
         "titulo":"PRODUCTS",
         "titulo_segundo":"Our Products",
-        "diametros":"Diameters",
-        "material":"Material",
-        "tipos":"Type",
+        "diametros":"Diameters:",
+        "material":"Material:",
+        "tipos":"Type:",
         "mas_vendido":"Best Sellers",
         "consultar":"Consult",
+        "description":"Description",
         "productos":{
             "1":{
                 "titulo":"Pressure and vacuum valves",
@@ -65,7 +66,7 @@
         },
         "Normas_de_calidad":{
             "titulo":"Quality standards",
-            "descripcion": "Todos los procesos que lleva a cabo Metalúrgica SAWA Argentina se encuentran medidos y controlados para cumplir con las especificaciones de nuestros clientes, es primordial dar una respuesta rápida a dichas necesidades, respetando los plazos y especificaciones indicados, con lo cual las herramientas del sistema de calidad contribuyen diariamente a este objetivo. En Metalúrgica SAWA Argentina estamos convencidos que la evolución continua es la mejor forma de mantener un avance sostenido.",
+            "descripcion": "All processes carried out by Metalúrgica SAWA Argentina are measured and controlled to meet the specifications of our customers, it is essential to give a quick response to these needs, respecting the deadlines and specifications indicated, with which the tools of the quality system contribute daily to this goal. In Metalúrgica SAWA Argentina we are convinced that continuous evolution is the best way to maintain a sustained progress.",
             "certificados":{
                 "titulo":"Some of our certificates:  "
             }
@@ -82,7 +83,9 @@
             "email":"Email",
             "mensaje":"Message",
             "descripcion":"*Contact us through our online customer service forms. An advisor will get back to you as soon as possible.",
-            "boton":"Send"
+            "boton":"Send",
+            "Ingrese_su_email":"Enter your e-mail",
+            "Ingrese_su_nombre":"Enter your name"
         }
 
     },

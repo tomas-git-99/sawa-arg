@@ -4,15 +4,15 @@
         <button type="button" class="btn-close" aria-label="Close" id="boton_salir" (click)="onSalir()"></button>
 
         <div class="titulo_productos">
-            <h2>{{item.nombre}}</h2>
+            <h2>{{'producto.productos.'+ item +'.titulo' | translate}}</h2>
         </div>
 
         <div class="carousel_2">
             <div class="cortar_imagenes">
                 <div class="carousel" data-flickity='{ "wrapAround": true, "pageDots": false }'>
-                    <div class="carousel-cell"><img src="{{item.imagen1}}"></div>
-                    <div class="carousel-cell" *ngIf="item.imagen2 == null || item.imagen2.length == 0 ? false : item.imagen2"><img src="{{item.imagen2}}"></div>
-                    <div class="carousel-cell" *ngIf="item.imagen3 == null || item.imagen3.length == 0 ? false : item.imagen3"><img src="{{item.imagen3}}"></div>
+                    <div class="carousel-cell"><img src="{{item_data.imagen1}}"></div>
+                    <div class="carousel-cell" *ngIf="item_data.imagen2 == null || item_data.imagen2.length == 0 ? false : item_data.imagen2"><img src="{{item_data.imagen2}}"></div>
+                    <div class="carousel-cell" *ngIf="item_data.imagen3 == null || item_data.imagen3.length == 0 ? false : item_data.imagen3"><img src="{{item_data.imagen3}}"></div>
         
                   </div>
 
@@ -22,19 +22,20 @@
 
         <div class="descripcion">
             <div class="descripcion_titulo">
-               <h3>Descripcion</h3>
+               <h3>{{'producto.descripcion'| translate }}</h3>
            </div>
-           <p>{{item.descripcion}}</p>
+           <p>{{'producto.productos.'+ item +'.descripcion' | translate}}</p>
 
-           <div class="material" *ngIf="item.materiales == null || item.materiales.length == 0 ? false : true">
+           <div class="material" *ngIf="item_data.materiales == null || item_data.materiales.length == 0 ? false : true">
                <div class="titulo_material">
-                   <h3>Material</h3>
-                   <p>{{item.materiales}}</p>
+                   <h3>{{ 'producto.material'| translate }} </h3>
+                   <p>{{'producto.productos.'+ item +'.material' | translate}}</p>
                </div>
 
-               <div class="titulo_diametro"  *ngIf="item.diametros == null || item.diametros.length == 0 ? false : true">
-                   <label for="">Diametros: <span>{{item.diametros }}</span> </label>
-                   <label for="" *ngIf="item.tipo == null || item.tipo.length == 0 ? false : true">Tipos: <span>{{ item.tipo[0].nombre + ", " + item.tipo[1].nombre }}</span></label>
+               <div class="titulo_diametro"  *ngIf="item_data.diametros == null || item_data.diametros.length == 0 ? false : true">
+
+                   <label for="">{{ 'producto.diametros'| translate }} <span>{{'producto.productos.'+ item +'.diametro' | translate}}</span> </label>
+                   <label for="" *ngIf="item_data.tipo == null || item_data.tipo.length == 0 ? false : true">{{ 'producto.tipos'| translate }}<span>{{ 'producto.productos.'+ item +'.tipos' | translate }}</span></label>
                 </div>
     
 
@@ -43,7 +44,7 @@
 
 
         <div class="soyelboton">
-            <button  class="btn btn-primary btn-lg">Consultar</button>
+            <button  class="btn btn-primary btn-lg">{{'producto.consultar'| translate}}</button>
         </div>
     </div>
 </div>

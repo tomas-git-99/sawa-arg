@@ -7,11 +7,13 @@
     "producto":{
         "titulo":"PRODUCTOS",
         "titulo_segundo":"Nuestros Productos",
-        "diametros":"Diametros",
-        "material":"Material",
-        "tipos":"Tipos",
+        "diametros":"Diametros: ",
+        "material":"Material: ",
+        "tipos":"Tipos: ",
         "mas_vendido":"Mas vendido",
         "consultar":"Consultar",
+        "descripcion":"Descripcion",
+        
         "productos":{
             "1":{
                 "titulo":"Válvulas de presión y vacío",
@@ -80,8 +82,10 @@
             "nombre":"Nombre",
             "email":"Email",
             "mensaje":"Mensaje",
-            "descripcion":"Comunicate a través de nuestros formularios de atención online. Un asesor te responderá a la brevedad",
-            "boton":"Enviar"
+            "descripcion":"*Comunicate a través de nuestros formularios de atención online. Un asesor te responderá a la brevedad",
+            "boton":"Enviar",
+            "Ingrese_su_email":"Ingrese su email",
+            "Ingrese_su_nombre":"Ingrese su nombre"
         }
 
     },
