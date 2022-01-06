@@ -4,6 +4,7 @@
     display: grid;
     height: 100%;
     place-content: center;
+
 }
 
 
@@ -34,6 +35,7 @@
     display: grid;
     justify-content: center;
     row-gap: 40px;
+    
     
 }
 .primer_carousel{
@@ -78,6 +80,7 @@
   .normas{
       display:grid;
       place-items: center;
+  
   }
 
 .datos{
@@ -121,7 +124,7 @@
 @media (max-width: 1050px){
   .contenido{
     width: 85vw;
-    height: 100%;
+    height: auto;
   }
   .primer_carousel{
     width:80vw;
@@ -135,17 +138,38 @@
 @media (max-width: 767px){
   .contenido{
     width: 85vw;
-    height: 1500px;
+    height: auto;
+margin: 20px;
+    
   }
   .datos{
+ 
+    width: 80vw;
+    
     grid-template-columns: 1fr;
+    display: grid;
+    justify-content:center;
     gap: 20px;
+   
+  }
+
+  .clientes{
+    width: 85vw;
+
   }
   .primer_carousel{
-    width:340px;
+    width:80vw;
   
   }
   .carousel-cell{
     width: 50%;
+  }
+  .normas_calidad{
+    width: 85vw;
+
+    text-align: center;
+  }
+  .normas_calidad select{
+    width: 70vw;
   }
 }

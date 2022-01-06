@@ -49,14 +49,15 @@
 @media (max-width: 1050px){
     .barra{
    
-        height: 330vh;
+        min-height: 315vh;
       
     }
   }
+
 @media (max-width: 767px){
     .barra{
    
-        height: 510vh;
+        height: 450vh;
       
     }
 }
