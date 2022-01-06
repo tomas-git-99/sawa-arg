@@ -8,20 +8,24 @@
             
             
             <div class="productos">
-                <app-view-producto  *ngIf="estado" [item]="nombre"></app-view-producto>
+                
+                <app-consultar *ngIf="estadoConsulta" [nombreHijoProducto]="datos_productos" ></app-consultar>
+
+                <app-view-producto  *ngIf="estado" [item]="nombre"  ></app-view-producto>
 
                 <app-navbar></app-navbar>
                 <br>
                 <br>
-
+                
                 <div class="titulo_productos">
                     <h1>Nuestros Productos</h1>
                     <hr>
                 </div>
-
-                <app-producto ></app-producto>
-
-               
+                
+                <app-producto (nombreDeProducto)="datos_productos = $event"></app-producto>
+                
+                
+                
             </div>
     
 

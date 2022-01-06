@@ -1,0 +1,93 @@
+{
+    "inicio": {
+        "titulo":"",
+        "descripcion":"Somos una empresa Metalúrgica que brindar soluciones integrales y mantener un contacto personalizado, profesional y cordial con cada uno de nuestros clientes mediante calidad, rápida respuesta y precios competitivos.",
+        "boton":"CONTACTANOS"
+    },
+    "producto":{
+        "titulo":"PRODUCTOS",
+        "titulo_segundo":"Nuestros Productos",
+        "diametros":"Diametros",
+        "material":"Material",
+        "tipos":"Tipos",
+        "mas_vendido":"Mas vendido",
+        "consultar":"Consultar",
+        "productos":{
+            "1":{
+                "titulo":"Válvulas de presión y vacío",
+                "descripcion": "Las válvulas de presión y vacío son necesarias cuando los productos son volátiles, cuando se necesita presurizar el tanque para que los vapores no se pierdan libremente en la atmósfera. Por este motivo es necesario colocar en el venteo una válvula de presión y vacío, de esta manera cerramos el tanque herméticamente, mientras no entra y sale producto del mismo, liberando los gases a partir de los rangos de presión y vacío preestablecidos en la válvula, de acuerdo a los valores de diseño del tanque. La válvula de presión y vacío es usada en tanques atmosféricos de almacenaje de concentrado de espuma, líquidos inflamables, alimentos y combustibles.",
+                "material":"Cuerpo de acero inoxidable, acero al carbono, polipropileno. Obturadores: igual material que el cuerpo. Guías de acero inoxidable y polipropileno. Asientos: Varían dependiendo de los gases pasantes, conexiones con o sin sobresalto."
+            },
+            "2":{
+                "titulo":"Bocas de medición y sondeo",
+                "descripcion":"La boca de medición o sondeo esta específicamente diseñada para ser utilizada como válvula de presión y vacío en los techos de tanques con productos líquidos e inflamables. Este diseño comprende la posibilidad de poder verificar la cantidad de producto que contiene, medir la temperatura y tomar muestras. Desde Metalúrgica SAWA comprendemos la importancia de las mediciones y por ende, fabricamos bocas de sondeo teniendo en cuenta todas las posibilidades y usos . La boca de sondeo está diseñada para ser utilizada en recipientes presurizados por encima de ese rango y se cierra completamente con hermeticidad, cumpliendo la función de Boca de sondeo con y válvula de presión y vacío.",
+                "material":""
+            },
+            "3":{
+                "titulo":"Blanketing",
+                "descripcion":"Los sistemas de blanketing se utilizan comúnmente en sistemas de almacenamiento en tanques cuando se desean reducir los peligros asociados con los líquidos inflamables o cuando se desea minimizar la contaminación o la degradación de los productos que podría generarse al ingresar aire en el espacio de vapor del tanque. Con este sistema creamos una manera eficaz de evitar incendios en tanques de almacenamiento de líquidos inflamables mediante el control de la formación de vapores de gases.",
+                "material":"Cuerpo de aluminio, acero inoxidable, acero al carbono y polipropileno. Obturadores de acero inoxidable, acero al carbono y polipropileno, guías de acero inoxidable y polipropileno.",
+                "diametro":"2″ a 12″."
+            },
+            "4":{
+                "titulo":"Valvula de emergencia",
+                "descripcion":"La válvula para venteo de emergencia o válvula de emergencia, se acciona únicamente en casos de emergencia, está diseñada para evacuar gran cantidad de gases en poco tiempo, la misma se encuentra seteada por encima de las válvulas de venteo normal (presión y vacío) y trabaja cuando estas válvulas no alcanzan a ventilar los gases producto de un exceso por expansión brusca de los mismos. Esta válvula no requiere de accesorios adicionales para su funcionamiento o puesta en marcha.",
+                "material":"Cuerpo de aluminio, acero inoxidable, acero al carbono, polipropileno. Obturadores de acero inoxidable, acero al carbono, polipropileno. Guías de acero inoxidable y polipropileno. Asientos varían de acuerdo a los gases pasantes. Conexiones con o sin sobresaltos."
+            },
+            "5":{
+                "titulo":"Vento libre",
+                "descripcion":"El venteo libre es utilizado en cualquier recipiente que contenga líquidos brindando acceso abierto al espacio de vapor del tanque proporcionando venteo de presión y vacío. En METALSAWA SRL fabricamos vente libre con maya antipájaros. Hemos desarrollado productos de alta calidad en venteo libre tipo camapana como así de tipo cuello.",
+                "material":"Cuerpo de aluminio, acero inoxidable, acero al carbono y polipropileno. Obturadores: Acero inoxidable, acero al carbono, polipropileno, guías de acero inoxidable y polipropileno. Conexiones con o sin sobresalto.",
+                "diametro":"2″ a 12″.",
+                "tipos":"Venteo libre tipo Cuello, Venteo libre tipo campana"
+            },
+            "6":{
+                "titulo":"Indicadores de nivel",
+                "descripcion":"El indicador de nivel se encuentra diseñado especialmente para tanques de tipo vertical. La indicación del señalador sobre las escalas graduadas nos muestra simultáneamente el volumen del líquido y la altura del mismo tomada desde el fondo del tanque. Dicha señal es transmitida por un flotante interior a través de un cable que pasa por dos poleas y que está solidario al señalador exterior.",
+                "material":""
+            },
+            "7":{
+                "titulo":"Succión flotante",
+                "descripcion":"Los equipos de succión flotante se utilizan para separar dos líquidos de diferentes viscosidades. Los brazos de succión flotantes se pueden instalar en tanques convencionales con techo fijo o techo flotante externo.",
+                "material":"Aluminio, acero inoxidable, acero al carbono, polipropileno. Conexiones con o sin sobresalto, funcionalidad: ingreso y egreso de producto al tanque",
+                "diametro":"2″ a 24″.",
+                "tipos":"Simple, Dobles de rebalse"
+            }
+        }
+    },
+    "tres":{
+        "titulo": "Nuestros Clientes",
+        "servicios": "Servicios",
+        "Prevencion_Y_Mantenimiento":{
+            "titulo":"Prevencion Y Mantenimiento",
+            "descripcion":"En Metalúrgica SAWA Argentina ofrecemos a nuestros clientes servicio de prevención y mantenimiento, una medida a tomar anticipadamente conservando el buen estado de los productos evitando pérdidas innecesarias. Comprendemos la importancia en la prevención y mantenimiento como todo riesgo que puede generar gastos en su empresa, afectar negativamente en la vida de las personas y el medio ambiente. Si desea un servicio a la altura de las circunstancias"
+        },
+        "Normas_de_calidad":{
+            "titulo":"Normas de calidad",
+            "descripcion": "Todos los procesos que lleva a cabo Metalúrgica SAWA Argentina se encuentran medidos y controlados para cumplir con las especificaciones de nuestros clientes, es primordial dar una respuesta rápida a dichas necesidades, respetando los plazos y especificaciones indicados, con lo cual las herramientas del sistema de calidad contribuyen diariamente a este objetivo. En Metalúrgica SAWA Argentina estamos convencidos que la evolución continua es la mejor forma de mantener un avance sostenido.",
+            "certificados":{
+                "titulo":"Algunos de nuestros certificados: "
+            }
+        }
+    },
+    "contactos":{
+        "titulo":"Formulario de contacto",
+        "uno":{
+            "telefono":"Telefono",
+            "email":"Email"
+        },
+        "dos":{
+            "nombre":"Nombre",
+            "email":"Email",
+            "mensaje":"Mensaje",
+            "descripcion":"Comunicate a través de nuestros formularios de atención online. Un asesor te responderá a la brevedad",
+            "boton":"Enviar"
+        }
+
+    },
+    "navbar":{
+        "inicio":"INICIO",
+        "productos":"PRODUCTOS",
+        "contactos":"CONTACTOS"
+    }
+}

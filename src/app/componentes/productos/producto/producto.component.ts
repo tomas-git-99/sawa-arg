@@ -7,6 +7,7 @@ import Flickity from 'flickity';
 import { Observable } from 'rxjs';
 import { ServiciosService } from '../../servicios.service';
 
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -20,20 +21,32 @@ export class ProductoComponent implements OnInit {
  
 
   productos:any = Productos;
+  estado:boolean = false;
 
+  @Output() nombreDeProducto: EventEmitter<string> = new EventEmitter();
 
  
-  constructor(private renderer: Renderer2, 
+  constructor(
+    public translate: TranslateService,
+    private renderer: Renderer2, 
     private servicio:ServicioService,
      private cdr: ChangeDetectorRef,
-     private srs:ServiciosService
+     private srs:ServiciosService,
+     
      ) { 
-    
+      translate.addLangs(['en', 'es']);
+      translate.setDefaultLang('es');
+  
+  
+      const browserLang:any = translate.getBrowserLang();
+      translate.use(browserLang.match(/en|es/) ? browserLang : 'es'); 
   }
   
   ngOnInit(): void {
-    
-   
+/*     this.servicio.abrirProducto$.subscribe( data => {
+      this.estado = data;
+    })
+    */
     
   }
   abrir(event:string | number){
@@ -51,5 +64,15 @@ export class ProductoComponent implements OnInit {
 
   }
 
+  abrirConsulta(id:string | number){
+    
+
+    let producto = this.servicio.cargarInfo(id);
+this.nombreDeProducto.emit(producto.nombre)
+    this.servicio.abrirProducto$.emit(true);
+
   
+  
+    
+  }
 }

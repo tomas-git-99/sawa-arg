@@ -3,9 +3,9 @@
 <div class="productos_full">
     <div class="contenedor">
 
-        <div class="producto" (click)="abrir(1)">
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(1)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2F2014-01-14_16.39.57-removebg-preview.png?alt=media&token=3a87c53d-7282-4822-a5b2-08d13200b673" alt=""></div>
                     <div class="carousel-cell"><img src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2F2014-01-14_16.40.11-removebg-preview.png?alt=media&token=4dba0b88-4bad-4e1d-bba7-1c164770d376" alt=""></div>
@@ -16,19 +16,19 @@
                 
                 <div class="titulo_producto">
                     <hr>
-                    <h3>Válvulas de presión y vacío</h3>
+                    <h3>{{'producto.productos.1.titulo' | translate}}</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(1)">Consultar</button>
                 </div>
             </div>
         </div>
 
 
 
-        <div class="producto" (click)="abrir(2)">
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(2)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style="width:250px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBocas%20de%20medici%C3%B3n%20y%20sondeo%2FMOD__BSS.06-removebg-preview.png?alt=media&token=759c1c92-74aa-4cad-ab86-223c86c483e8" alt=""></div>
                     <div class="carousel-cell"><img style="width:250px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBocas%20de%20medici%C3%B3n%20y%20sondeo%2FMOD_BSVS-06-removebg-preview.png?alt=media&token=dbeb408f-a4da-44c9-b0d3-3e10d048aabd" alt=""></div>
@@ -42,14 +42,14 @@
                     <h3>Bocas de medición y sondeo</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(2)">Consultar</button>
                 </div>
             </div>
         </div>
 
-        <div class="producto" (click)="abrir(3)">
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(3)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style="width:250px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.22.11-removebg-preview.png?alt=media&token=da85fe72-469c-4482-98ba-d7a0186c2c0e" alt=""></div>
                     <div class="carousel-cell"><img style="width:250px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.18.03-removebg-preview.png?alt=media&token=f77f0e42-d2b8-47d7-9e28-1e2463adb086" alt=""></div>
@@ -63,14 +63,14 @@
                     <h3>Blanketing</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(3)">Consultar</button>
                 </div>
             </div>
         </div>
 
-        <div class="producto" (click)="abrir(4)">
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(4)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style=" transform: rotate(-90deg);;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FValvula%20de%20emergencia%2FImagen133-removebg-preview.png?alt=media&token=cb5bf8f4-0084-4d58-afbe-303b343427cf" alt=""></div>
                 </div>
@@ -82,14 +82,14 @@
                     <h3>Valvula de emergencia</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(4)">Consultar</button>
                 </div>
             </div>
         </div>
 
-        <div class="producto" (click)="abrir(5)" >
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(5)" >
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style="width:150px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FVento%20libre%2FMOD_VLS-__TIPO_CUELLO__MOD__BAVS--removebg-preview.png?alt=media&token=8e5cffe1-1ae7-4e30-8ad5-62abfe67a167" alt=""></div>
                     <div class="carousel-cell"><img style="width:140px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FVento%20libre%2FMOD__VLS-06___TIPO_CAMPANA_____MOD_BAVS-06-removebg-preview.png?alt=media&token=ee8e8dd7-1f9e-4588-9f49-cea4d12f12eb" alt=""></div>
@@ -102,15 +102,15 @@
                     <h3>Vento libre</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(5)">Consultar</button>
                 </div>
             </div>
         </div>
 
 
-        <div class="producto" (click)="abrir(6)">
+        <div class="producto">
 
-            <div class="item" >
+            <div class="item"  (click)="abrir(6)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style="width:150px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FIndicadores%20de%20nivel%2FMOD__INES-18-removebg-preview.png?alt=media&token=625f1cd5-7bfa-4e36-9b64-fab070a22ec8" alt=""></div>
                     <div class="carousel-cell"><img style="width:240px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FIndicadores%20de%20nivel%2FMOD_INES-18-removebg-preview.png?alt=media&token=ccb879a2-0444-467b-8967-9c51f27b0277" alt=""></div>
@@ -123,15 +123,15 @@
                     <h3>Indicadores de nivel</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(6)">Consultar</button>
                 </div>
             </div>
         </div>
 
 
-        <div class="producto" (click)="abrir(7)">
+        <div class="producto" >
 
-            <div class="item" >
+            <div class="item" (click)="abrir(7)">
                 <div class="carousel"   data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 3000 }'>
                     <div class="carousel-cell"><img style="width:170px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FSUCCIONES%20%20FLOTANTE%2FSUCCION_MOD__SFDS-__EN_ALUMINIO-removebg-preview.png?alt=media&token=8cd9eb2a-296b-4104-90f1-4a976aba0989" alt=""></div>
                     <div class="carousel-cell"><img style="width:240px;" src="https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FSUCCIONES%20%20FLOTANTE%2FMOD__SFSS--removebg-preview.png?alt=media&token=70eadcdd-4096-4308-a061-bfda0ec48206" alt=""></div>
@@ -145,7 +145,7 @@
                     <h3>Succión flotante</h3>
                 </div>
                 <div class="botones">
-                    <button  class="btn btn-outline-primary">Consultar</button>
+                    <button  class="btn btn-outline-primary" (click)="abrirConsulta(7)">Consultar</button>
                 </div>
             </div>
         </div>

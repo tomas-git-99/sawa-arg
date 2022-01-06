@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { EventEmitter, Injectable } from "@angular/core";
 import { Observable, of, Subject } from "rxjs";
 import { delay } from "rxjs/operators";
+import { environment } from "src/environments/environment";
 
 import Productos from '../../../assets/productos.json';
 @Injectable({
@@ -22,7 +23,7 @@ export class ServicioService {
   nombreProducto = new EventEmitter<string>();
 
 
-  constructor() {
+  constructor(private http: HttpClient) {
     
    }
  
@@ -46,5 +47,10 @@ export class ServicioService {
 
   
     return producto
+  }
+
+
+  evniarFormulario(data:any) {
+    return this.http.post<any>(environment.urlDesarrolloBackend, data);
   }
 }

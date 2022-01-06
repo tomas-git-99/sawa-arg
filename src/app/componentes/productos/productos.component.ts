@@ -11,8 +11,10 @@ import { ServicioService } from '../funciones/servicio.service';
 export class ProductosComponent implements OnInit {
 
   estado: boolean = false;
-
+  estadoConsulta:boolean = false;
   nombre: any;
+
+  datos_productos:any;
 
   constructor(private service:ServicioService) { 
   }
@@ -31,6 +33,12 @@ export class ProductosComponent implements OnInit {
       this.estado = e;
 
     })
+
+    this.service.abrirProducto$.subscribe( e => {
+      this.estadoConsulta = e;
+    })
+
+ 
     
   }
 

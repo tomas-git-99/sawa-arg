@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ServicioService } from './funciones/servicio.service';
 import { ConsultarComponent } from './consultar/consultar.component';
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -28,7 +29,8 @@ import { ConsultarComponent } from './consultar/consultar.component';
     CommonModule,
     RouterModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   exports: [
     NavbarComponent,

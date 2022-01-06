@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { ServicioService } from '../funciones/servicio.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class InicioComponent implements OnInit {
   constructor(private servicio:ServicioService) { 
   /*   this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.min.css") */
     this.servicio.loadScript("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js");
-
+  
 
   }
 
@@ -23,5 +24,6 @@ export class InicioComponent implements OnInit {
       this.estadoConsulta = e;
     })
   }
+
 
 }
