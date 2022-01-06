@@ -46,18 +46,27 @@
 }
 
 
+
+
 @media (max-width: 1050px){
     .barra{
-   
-        min-height: 315vh;
-      
+        
+        height: 3100px;
+        
     }
-  }
+}
+@media (max-width: 866px){
+    .barra{
+        
+        height: 3200px;
+        
+    }
+}
 
-@media (max-width: 767px){
+@media (max-width: 780px){
     .barra{
    
-        height: 450vh;
+        height: 4300px;
       
     }
 }

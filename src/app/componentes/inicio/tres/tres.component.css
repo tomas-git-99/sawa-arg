@@ -121,7 +121,7 @@
   color: #a4a4a4
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1350px){
   .contenido{
     width: 85vw;
     height: auto;
