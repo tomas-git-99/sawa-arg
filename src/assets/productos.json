@@ -5,29 +5,54 @@
         "nombre": "Válvulas de presión y vacío",
         "descripcion": "Las válvulas de presión y vacío son necesarias cuando los productos son volátiles, cuando se necesita presurizar el tanque para que los vapores no se pierdan libremente en la atmósfera. Por este motivo es necesario colocar en el venteo una válvula de presión y vacío, de esta manera cerramos el tanque herméticamente, mientras no entra y sale producto del mismo, liberando los gases a partir de los rangos de presión y vacío preestablecidos en la válvula, de acuerdo a los valores de diseño del tanque. \n La válvula de presión y vacío es usada en tanques atmosféricos de almacenaje de concentrado de espuma, líquidos inflamables, alimentos y combustibles.",
         "materiales": "Cuerpo de acero inoxidable, acero al carbono, polipropileno. Obturadores: igual material que el cuerpo. Guías de acero inoxidable y polipropileno. Asientos: Varían dependiendo de los gases pasantes, conexiones con o sin sobresalto.",
+        "tipo":[
+          {
+            "nombre":"Válvulas de presión y vacío(VPVS-)"
+          },
+          {
+            "nombre":"Válvulas de presión y vacío con Arrestallama(VPVS)"
+          },
+          {
+            "nombre":"Válvulas de presión y vacío Dirigido(Modelo: VPVDS)"
+          }
+        ],
         "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2F2014-01-14_16.39.57-removebg-preview.png?alt=media&token=3a87c53d-7282-4822-a5b2-08d13200b673",
         "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2F2014-01-14_16.40.11-removebg-preview.png?alt=media&token=4dba0b88-4bad-4e1d-bba7-1c164770d376",
-        "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2FMOD_VPVDS-6X8-removebg-preview.png?alt=media&token=db010d8b-2e36-4a26-8483-3d2981295649"
+        "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2FSAWA_01_-_copia-removebg-preview.png?alt=media&token=ca0aa978-1c4b-4580-b1a5-201d66dbd570",
+        "imagen4":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2Fvpv_con_arrestallamas-removebg-preview.png?alt=media&token=91519472-ce43-4db7-94b5-6b23d10dc790",
+        "imagen5":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FV%C3%A1lvulas%20de%20presi%C3%B3n%20y%20vac%C3%ADo%2Fvalvula_de_presion_y_vacio-editado-mejor-removebg-preview.png?alt=media&token=902c152b-5d1b-44ca-9a2f-255b6ce152bf"
+        
+
       },
       {
         "id": "2",
         "nombre": "Bocas de medición y sondeo",
         "descripcion": "La boca de medición o sondeo esta específicamente diseñada para ser utilizada como válvula de presión y vacío en los techos de tanques con productos líquidos e inflamables. Este diseño comprende la posibilidad de poder verificar la cantidad de producto que contiene, medir la temperatura y tomar muestras. Desde Metalúrgica SAWA comprendemos la importancia de las mediciones y por ende, fabricamos bocas de sondeo teniendo en cuenta todas las posibilidades y usos . La boca de sondeo está diseñada para ser utilizada en recipientes presurizados por encima de ese rango y se cierra completamente con hermeticidad, cumpliendo la función de Boca de sondeo con y válvula de presión y vacío.",
         "materiales": "",
+        "tipo":[
+          {
+            "nombre":"Bocas de medición y sondeo(Modelo: BSS-)"
+          },
+          {
+            "nombre":"Bocas de medición y sondeo con bulon volcable(Modelo: BSVS-)"
+          }
+
+        ],
         "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBocas%20de%20medici%C3%B3n%20y%20sondeo%2FMOD__BSS.06-removebg-preview.png?alt=media&token=759c1c92-74aa-4cad-ab86-223c86c483e8",
         "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBocas%20de%20medici%C3%B3n%20y%20sondeo%2FMOD_BSVS-06-removebg-preview.png?alt=media&token=dbeb408f-a4da-44c9-b0d3-3e10d048aabd",
         "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBocas%20de%20medici%C3%B3n%20y%20sondeo%2FMOD_BSVS-06__2_-removebg-preview.png?alt=media&token=a843c925-3222-46a1-bccb-a0c7be9a0523"
       },
       {
-        "id": "3",
-        "nombre": "Blanketing",
-        "descripcion": "Los sistemas de blanketing se utilizan comúnmente en sistemas de almacenamiento en tanques cuando se desean reducir los peligros asociados con los líquidos inflamables o cuando se desea minimizar la contaminación o la degradación de los productos que podría generarse al ingresar aire en el espacio de vapor del tanque. Con este sistema creamos una manera eficaz de evitar incendios en tanques de almacenamiento de líquidos inflamables mediante el control de la formación de vapores de gases.",
-        "materiales": "Cuerpo de aluminio, acero inoxidable, acero al carbono y polipropileno. Obturadores de acero inoxidable, acero al carbono y polipropileno, guías de acero inoxidable y polipropileno.",
-        "diametros":"2″ a 12″.",
-        "asientos":"Varían de acuerdo a los gases pasantes, conexiones con o sin sobresalto.",
-        "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.22.11-removebg-preview.png?alt=media&token=da85fe72-469c-4482-98ba-d7a0186c2c0e",
-        "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.18.03-removebg-preview.png?alt=media&token=f77f0e42-d2b8-47d7-9e28-1e2463adb086",
-        "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.21.09-removebg-preview.png?alt=media&token=1cfe63db-9a9c-43db-8b0d-8026ff28170e"
+        "id":"3",
+        "nombre":"Arrestallamas",
+        "descripcion":"Cuando el producto almacenado en un tanque o el gas utilizado para presurizar el mismo es combustible, es aconsejable utilizar como accesorio un block Arrestallamas. Este evita que ingrese chispa o llama por el conducto de vacío, cortando la posibilidad de propagación de fuego dentro del recipiente. El arrestallamas es un elemento que dispersa y extingue el frente de llamas, del lado no protegio de una tubería o tanque de combustible, a fin de evitar la combustión en la mezcla de vapores.",
+        "materiales":"Cuerpo de acero inoxidable, acero al carbono, oolipropileno. Conexiones con o sin sobresalto.",
+        "tipo":[
+          {
+            "nombre":"Arrestallamas(Modelo: BAVS)"
+          }
+        ]
+
       },
       {
         "id": "4",
@@ -82,6 +107,18 @@
         "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FSUCCIONES%20%20FLOTANTE%2FSUCCION_MOD__SFDS-__EN_ALUMINIO-removebg-preview.png?alt=media&token=8cd9eb2a-296b-4104-90f1-4a976aba0989",
         "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FSUCCIONES%20%20FLOTANTE%2FMOD__SFSS--removebg-preview.png?alt=media&token=70eadcdd-4096-4308-a061-bfda0ec48206",
         "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FSUCCIONES%20%20FLOTANTE%2FMOD__SFSS-__3_-removebg-preview.png?alt=media&token=217ceef4-4380-4154-b56b-5e0f1eca078c"
+      },
+      {
+        "id": "8",
+        "nombre": "Blanketing",
+        "descripcion": "Los sistemas de blanketing se utilizan comúnmente en sistemas de almacenamiento en tanques cuando se desean reducir los peligros asociados con los líquidos inflamables o cuando se desea minimizar la contaminación o la degradación de los productos que podría generarse al ingresar aire en el espacio de vapor del tanque. Con este sistema creamos una manera eficaz de evitar incendios en tanques de almacenamiento de líquidos inflamables mediante el control de la formación de vapores de gases.",
+        "materiales": "Cuerpo de aluminio, acero inoxidable, acero al carbono y polipropileno. Obturadores de acero inoxidable, acero al carbono y polipropileno, guías de acero inoxidable y polipropileno.",
+        "diametros":"2″ a 12″.",
+        "asientos":"Varían de acuerdo a los gases pasantes, conexiones con o sin sobresalto.",
+        "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.22.11-removebg-preview.png?alt=media&token=da85fe72-469c-4482-98ba-d7a0186c2c0e",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.18.03-removebg-preview.png?alt=media&token=f77f0e42-d2b8-47d7-9e28-1e2463adb086",
+        "imagen3":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FBlanketing%2F2013-05-20_09.21.09-removebg-preview.png?alt=media&token=1cfe63db-9a9c-43db-8b0d-8026ff28170e"
+
       }
     ]
 }

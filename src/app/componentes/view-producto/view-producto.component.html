@@ -13,6 +13,8 @@
                     <div class="carousel-cell"><img src="{{item_data.imagen1}}"></div>
                     <div class="carousel-cell" *ngIf="item_data.imagen2 == null || item_data.imagen2.length == 0 ? false : item_data.imagen2"><img src="{{item_data.imagen2}}"></div>
                     <div class="carousel-cell" *ngIf="item_data.imagen3 == null || item_data.imagen3.length == 0 ? false : item_data.imagen3"><img src="{{item_data.imagen3}}"></div>
+                    <div class="carousel-cell" *ngIf="item_data.imagen4 == null || item_data.imagen4.length == 0 ? false : item_data.imagen4"><img src="{{item_data.imagen4}}"></div>
+                    <div class="carousel-cell" *ngIf="item_data.imagen5 == null || item_data.imagen5.length == 0 ? false : item_data.imagen5"><img src="{{item_data.imagen5}}"></div>
         
                   </div>
 
@@ -26,15 +28,15 @@
            </div>
            <p>{{'producto.productos.'+ item +'.descripcion' | translate}}</p>
 
-           <div class="material" *ngIf="item_data.materiales == null || item_data.materiales.length == 0 ? false : true">
-               <div class="titulo_material">
+           <div class="material">
+               <div class="titulo_material"  *ngIf="item_data.materiales == null || item_data.materiales.length == 0 ? false : true">
                    <h3>{{ 'producto.material'| translate }} </h3>
                    <p>{{'producto.productos.'+ item +'.material' | translate}}</p>
                </div>
 
-               <div class="titulo_diametro"  *ngIf="item_data.diametros == null || item_data.diametros.length == 0 ? false : true">
+               <div class="titulo_diametro"  >
 
-                   <label for="">{{ 'producto.diametros'| translate }} <span>{{'producto.productos.'+ item +'.diametro' | translate}}</span> </label>
+                   <label for="" *ngIf="item_data.diametros == null || item_data.diametros.length == 0 ? false : true">{{ 'producto.diametros'| translate }} <span>{{'producto.productos.'+ item +'.diametro' | translate}}</span> </label>
                    <label for="" *ngIf="item_data.tipo == null || item_data.tipo.length == 0 ? false : true">{{ 'producto.tipos'| translate }}<span>{{ 'producto.productos.'+ item +'.tipos' | translate }}</span></label>
                 </div>
     
@@ -43,8 +45,8 @@
         </div>
 
 
-        <div class="soyelboton">
+    <!--     <div class="soyelboton">
             <button  class="btn btn-primary btn-lg">{{'producto.consultar'| translate}}</button>
-        </div>
+        </div> -->
     </div>
 </div>

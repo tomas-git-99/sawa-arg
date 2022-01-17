@@ -21,7 +21,7 @@
  padding-left: 30px;
 }
 .contenido{
-    width:1200px;
+    width:1000px;
     height: auto;
     background: white;
     border-radius: 15px;
@@ -30,6 +30,7 @@
     align-content: center;
 transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 25px; ;
 }
 .titulo_productos{
     
@@ -103,12 +104,14 @@ display: grid;
 .titulo_diametro label{
   font-family: 'Poppins', sans-serif;
   font-weight:600; 
+  font-size: 16px;
   margin-left: 20px;
 }
 
 .titulo_diametro span{
   font-family: 'Poppins', sans-serif;
   font-weight:300;
+  font-size: 14px;
 }
 
 
