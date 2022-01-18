@@ -48,7 +48,7 @@
   
   .carousel-cell {
     width: 20%;
-    height: 100px;
+    height: 120px;
     margin-right: 10px;
 /*     background: #8C8;
     counter-increment: gallery-cell; */
@@ -56,10 +56,14 @@
     display: grid;
     justify-content: center;
     align-items: center;
-  }
+    
+  
+    }
 
 .carousel-cell img{
-  width: 150px;
+  width: 100px;
+  height: auto;
+
   }
   
 /*   .carousel-cell.is-selected {
