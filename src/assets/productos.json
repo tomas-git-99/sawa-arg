@@ -51,8 +51,9 @@
           {
             "nombre":"Arrestallamas(Modelo: BAVS)"
           }
-        ]
-
+        ],
+        "imagen1":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FArrestallamas%2F1423925500859__2_-removebg-preview.png?alt=media&token=ec4f325e-6595-4573-a328-d66ef87d5526",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/node-chat-destruccion.appspot.com/o/sawa-imagenes%2FArrestallamas%2FImagen045-removebg-preview.png?alt=media&token=95038665-a49f-4bf4-af6a-3f901dbee692"
       },
       {
         "id": "4",

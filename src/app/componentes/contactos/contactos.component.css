@@ -67,7 +67,9 @@
 }
 .info{
     font-size:12px;
+    
 }
+
 .data{
     place-self: center;
     display:grid;
@@ -136,8 +138,8 @@ flex-direction: column;
     }
     #mensaje{
         display: grid;
-        place-self: center;
-        width: 90%;
+        /* place-self: center;
+        width: 90%; */
     }
     #mensaje label{
         text-align: center;

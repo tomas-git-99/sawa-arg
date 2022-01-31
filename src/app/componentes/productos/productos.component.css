@@ -48,7 +48,17 @@
 @media (max-width: 767px){
     .barra{
 
-        height:370vh;
+        min-height:470vh;
+       
+    }
+    
+  }
+
+
+@media (max-height: 850px){
+    .barra{
+
+        height:230vh;
        
     }
     

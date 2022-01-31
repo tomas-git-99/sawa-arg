@@ -102,12 +102,11 @@
                         name="mensaje"
                         formControlName="mensaje"
                       ></textarea>
+                      <span class="info"
+                        > {{'contactos.dos.descripcion'| translate}}
+                        </span>
                     </div>
-    
-                    <span class="info"
-                      >{{'contactos.dos.descripcion'| translate}}</span
-                    >
-    
+                 
                     <div class="button_enviar" #botono_enviar_form>
                       <button type="submit"  class="btn btn-primary btn-lg">
                         {{'contactos.dos.boton'| translate}}
@@ -121,6 +120,6 @@
       </div>
     </div>
   </div>
-
-  <app-final></app-final>
+  
 </div>
+<app-final></app-final>
