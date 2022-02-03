@@ -11,10 +11,11 @@
 .precentacion{
 
     display: grid;
-    height: 50vh;
+    height: 90vh;
     /* text-align: center; */
     align-content: center;
     justify-items: center;
+
     
    
 }
@@ -23,6 +24,8 @@
     gap: 30px;
     text-align: justify;
     width: 90%;
+
+    
     
 }
 .centrar_contacto h1{
@@ -31,27 +34,36 @@
     font-weight:500; 
     font-size: 40px;
     padding-bottom: 10px;
+
     
 }
 
 .centrar_contacto p{
-    color: #a4a4a4;
-    font-size: 16px;
+    color: #3D3D3D;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:300; 
 }
 
 .centrar_contacto h1{
-    color: #727171;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600; 
+    color: #3D3D3D;
 }
 .imagen_inicio{
     display: grid;
     
     place-self: center;
+    height: 90vh;
+    align-content:start;
+    padding-top:  50px;
+
 }
 
 
 .redondo{
-    width:  500px;
-    height: 500px;
+    width:  600px;
+    height: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 50%;
     overflow: hidden;

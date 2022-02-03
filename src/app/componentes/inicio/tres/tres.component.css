@@ -25,10 +25,11 @@
 
 
 .titulo_cliente{
+  padding-top: 15px;
   display:grid;
   justify-content: center;
   text-align: center;
-  color: #a4a4a4
+  color: #3D3D3D
 
 }
 .clientes{
@@ -111,18 +112,19 @@
 
 .titulo_servicio{
   padding-bottom: 60px;
-  color: #a4a4a4
+  color: #3D3D3D
 
 }
 
 
 .datos h3{
-  color: #a4a4a4
+  color: #3D3D3D
 
 }
 .datos p{
   font-size: 14px;
-  color: #a4a4a4
+  color: #3D3D3D;
+  font-weight:300; 
 }
 
 @media (max-width: 1350px){

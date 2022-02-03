@@ -74,10 +74,21 @@
 
 
 
+@media (max-height: 880px){
+    .barra{
+   
+        height: 2600px;
+      /*   max-height: 2900px; */
+      
+    }
+}
+
+
+
 @media (max-height: 750px){
     .barra{
    
-        height: 2500px;
+        height: 2400px;
       /*   max-height: 2900px; */
       
     }
