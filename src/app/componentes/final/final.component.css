@@ -2,7 +2,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 12vh;
+   /*  height: 12vh; */
     background: #273043;
     padding-left: 150px;
 }

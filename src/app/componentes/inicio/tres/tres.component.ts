@@ -12,6 +12,45 @@ export class TresComponent implements OnInit {
   
   seleccionado:string = '';
 
+  showListClient:boolean = false;
+
+
+  clientesSinLogo:{name:string}[] = [
+    {
+      name:'don jose s.r.l'
+    },
+    {
+      name:'colorini m.s.a'
+    },
+    {
+      name:'obra uno s.r.l'
+    },
+    {
+      name:'biotrinidad s.a'
+    },
+    {
+      name:'z.mazzeo s.a '
+    },
+    {
+      name:'inuit s.a'
+    },
+    {
+      name:'cauval'
+    },
+    {
+      name:'proactiva s.a'
+    },
+    {
+      name:'colalao del valle s.a'
+    },
+    {
+      name:'el porteador s.a'
+    },
+    {
+      name:'COMPANIA INVERSORA INDUSTRIAL S.A.'
+    }
+  ]
+
   constructor(public translate: TranslateService) { 
     
     translate.addLangs(['en', 'es']);
@@ -56,5 +95,9 @@ export class TresComponent implements OnInit {
 
     let link_id = links.find ( e => e.id == event.value ?? e);
     window.location.href = `${link_id!.link}`;
+  }
+
+  closeListClient(){
+    this.showListClient = !this.showListClient
   }
 }

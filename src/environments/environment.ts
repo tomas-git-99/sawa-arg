@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  urlDesarrolloBackend:    "http://localhost:5050/api/email",
+  urlDesarrolloBackend:    "https://tiendamilena.com.ar/api/email",
 };
 
 /*

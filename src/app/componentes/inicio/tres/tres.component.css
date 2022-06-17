@@ -179,3 +179,23 @@ margin: 20px;
     width: 70vw;
   }
 }
+
+
+.moreClient:hover{
+  color: #3D3D3D;
+  text-decoration: underline;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+}

@@ -45,7 +45,8 @@ export class ContactosComponent implements OnInit {
 </button>
     `
     this.service.evniarFormulario(data).subscribe( dato => {
-    if(data.ok == true) {
+
+    if(dato.ok == true) {
       Swal.fire({
         position: 'top-end',
         icon: 'success',

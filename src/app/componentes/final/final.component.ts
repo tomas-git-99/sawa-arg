@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-final',
@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./final.component.css']
 })
 export class FinalComponent implements OnInit {
+  @ViewChild('pele') pele!:ElementRef<HTMLInputElement>;
 
-  constructor() { }
+  constructor() { 
+   
+  }
 
   ngOnInit(): void {
+    
   }
+
+
+
+
+
+
 
 }
